@@ -15,7 +15,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
       appBar: AppBar(
         title: Text('Monstera Green House'),
       ),
-      body: HomeScreen(),
+      body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/bg.png'),
+                  fit: BoxFit.cover)),
+          // height: 300,
+          child: HomeScreen()),
     );
   }
 }
